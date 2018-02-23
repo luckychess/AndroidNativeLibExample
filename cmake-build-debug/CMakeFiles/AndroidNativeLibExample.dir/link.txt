@@ -1,1 +1,0 @@
-/usr/local/opt/llvm/bin/clang++  -std=c++14 -g -dynamiclib -Wl,-headerpad_max_install_names  -o libAndroidNativeLibExample.dylib -install_name @rpath/libAndroidNativeLibExample.dylib CMakeFiles/AndroidNativeLibExample.dir/example.cpp.o CMakeFiles/AndroidNativeLibExample.dir/example_wrap.cxx.o 
