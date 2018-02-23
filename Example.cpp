@@ -2,9 +2,15 @@
 // Created by William Kamp on 10/22/15.
 //
 
-#include "Example.h"
+#include "example.h"
 
 using namespace std;
+
+int Example::getId() {
+  return 5;
+}
+
+Example::Example() {}
 
 std::string Example::getVersion() {
     std::string version = "0.1";

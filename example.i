@@ -1,10 +1,9 @@
-/* Example.i */
- %module ExampleModule
- %include "std_string.i"
- %{
-/* Includes the header in the wrapper code */
- #include "Example.h"
- %}
+%module ExampleModule
 
-/* Parse the header file to generate wrappers */
- %include "Example.h"
+%include "std_string.i"
+
+%{
+#include "example.h"
+%}
+
+%include "example.h"

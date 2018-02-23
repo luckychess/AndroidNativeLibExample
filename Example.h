@@ -8,11 +8,10 @@
 #include <string>
 
 class Example {
-
-
 public:
-    std::string getVersion();
+  static int getId();
+  Example();
+  std::string getVersion();
 };
-
 
 #endif //ANDROIDNATIVELIBEXAMPLE_EXAMPLE_H
