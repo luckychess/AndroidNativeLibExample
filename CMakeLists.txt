@@ -26,7 +26,7 @@ include_directories(${JAVA_INCLUDE_PATH})
 # the include path to jni_md.h
 include_directories(${JAVA_INCLUDE_PATH2})
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -static-libstdc++ -static-libgcc -static")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -static-libstdc++ -static-libgcc -static --disable-asm")
 set(SOURCE_FILES example.cpp example.h example_wrap.cxx)
 
 add_library(${PNAME} SHARED ${SOURCE_FILES})
