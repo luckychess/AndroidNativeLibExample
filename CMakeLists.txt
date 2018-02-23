@@ -20,9 +20,11 @@ cmake_minimum_required(VERSION 3.3)
 set(PNAME AndroidNativeLibExample)
 project(${PNAME})
 
-#add_definitions(-DANDROID)
-
-#message(STATUS "Hello from Android build!")
+find_package(JNI REQUIRED)
+# the include path to jni.h
+include_directories(${JAVA_INCLUDE_PATH})
+# the include path to jni_md.h
+include_directories(${JAVA_INCLUDE_PATH2})
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 set(SOURCE_FILES example.cpp example.h example_wrap.cxx)
